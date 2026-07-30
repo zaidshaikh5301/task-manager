@@ -1,0 +1,118 @@
+/* Register Page */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f4f7fb;
+    padding: 20px;
+}
+
+
+/* Card */
+
+.container h2 {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background: white;
+    margin: 0;
+    padding: 25px 30px 15px;
+    border-radius: 15px 15px 0 0;
+    color: #222;
+    font-size: 28px;
+}
+
+
+/* Form */
+
+.container form {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px 30px 30px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.container input,
+.container select {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+
+.container input:focus,
+.container select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37,99,235,0.25);
+}
+
+
+/* Button */
+
+.container button {
+    width: 100%;
+    padding: 13px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.container button:hover {
+    background: #1d4ed8;
+}
+
+
+/* Login Text */
+
+.container p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+
+.container p a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+.container p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:480px){
+
+    .container form,
+    .container h2 {
+        max-width: 100%;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+}
