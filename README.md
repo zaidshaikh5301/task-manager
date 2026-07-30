@@ -265,13 +265,6 @@ git push origin feature-name
 
 ---
 
-# 👨‍💻 Author
-
-**Mohamad Zaid A. Shaikh**
-
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
-
 ---
 
 # 📄 License
