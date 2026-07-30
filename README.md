@@ -1,16 +1,279 @@
-# React + Vite
+# 📝 Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern Task Manager web application built with **React.js** and **Vite** that allows users to securely manage their daily tasks using JWT authentication and a REST API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 🔐 Authentication
+- User Registration
+- User Login
+- JWT Token Authentication
+- Protected Routes
+- Logout Functionality
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✅ Task Management
+- Create New Tasks
+- View All Tasks
+- Update Existing Tasks
+- Delete Tasks
+- Mark Tasks as Complete/Incomplete
+- Real-time UI Updates
 
-## Expanding the Oxlint configuration
+### 👤 User Profile
+- View User Profile
+- Update Personal Information
+- Upload Profile Picture (API Integration)
+- Responsive Profile Page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 🎨 UI Features
+- Responsive Design
+- Clean Dashboard
+- Modern User Interface
+- Loading Indicators
+- Success & Error Notifications
+- Form Validation
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- React Router DOM
+- Axios
+- React Toastify
+- CSS
+
+## Backend API
+- Intern CRUD Task API
+
+---
+
+# 📂 Project Structure
+
+```
+src/
+│
+├── api/
+│   └── axios.js
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── TaskCard.jsx
+│   └── ProtectedRoute.jsx
+│
+├── pages/
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── Dashboard.jsx
+│   ├── Profile.jsx
+│   └── NotFound.jsx
+│
+├── context/
+│   └── AuthContext.jsx
+│
+├── assets/
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/task-manager.git
+```
+
+Go inside project
+
+```bash
+cd task-manager
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+# 🌐 API Used
+
+Base URL
+
+```
+https://intern-crud-task-api.onrender.com
+```
+
+### Authentication
+
+```
+POST /api/auth/signup
+POST /api/auth/login
+```
+
+### Tasks
+
+```
+GET    /api/tasks
+POST   /api/tasks
+PUT    /api/tasks/:id
+DELETE /api/tasks/:id
+```
+
+### User
+
+```
+GET /api/users/profile
+PUT /api/users/profile
+```
+
+---
+
+# 🔑 Environment Variables
+
+Create a `.env` file in the root directory.
+
+```env
+VITE_API_URL=https://intern-crud-task-api.onrender.com
+```
+
+---
+
+# 📸 Screenshots
+
+Add screenshots here.
+
+```
+screenshots/
+│
+├── login.png
+├── register.png
+├── dashboard.png
+├── profile.png
+```
+
+---
+
+# 📌 Available Scripts
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Build project
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+# 📖 How It Works
+
+1. Register a new account.
+2. Login with your credentials.
+3. JWT token is stored securely.
+4. Access the protected dashboard.
+5. Create, update, and delete tasks.
+6. Manage your profile.
+7. Logout when finished.
+
+---
+
+# 🔒 Authentication Flow
+
+```
+User Login
+      │
+      ▼
+Receive JWT Token
+      │
+      ▼
+Store Token
+      │
+      ▼
+Attach Token to Axios Requests
+      │
+      ▼
+Access Protected APIs
+```
+
+---
+
+# 🎯 Future Improvements
+
+- Task Categories
+- Task Priority
+- Due Dates
+- Search Tasks
+- Filter Tasks
+- Dark Mode
+- Pagination
+- Drag & Drop Tasks
+- Email Notifications
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new branch
+
+```
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```
+git commit -m "Added new feature"
+```
+
+4. Push the branch
+
+```
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+# 👨‍💻 Author
+
+**Mohamad Zaid A. Shaikh**
+
+- GitHub: https://github.com/yourusername
+- LinkedIn: https://linkedin.com/in/yourprofile
+
+---
+
+# 📄 License
+
+This project is developed for learning purposes and internship practice.
