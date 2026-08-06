@@ -1,92 +1,26 @@
 # ✅ Task Manager
 
-A Task Management application built with React and REST APIs that helps users organize and track daily tasks efficiently.
+A responsive task management application with authentication, profile management, file uploads, and REST API integration.
 
----
+## 🚀 Features
 
-## Features
+- **User Authentication**: Secure login and registration using JWT.
+- **Task Management**: Create, read, update, and delete tasks.
+- **Profile Management**: Users can update their profile information.
+- **File Uploads**: Support for uploading avatars or attachments.
+- **REST API**: Clean API structure for frontend-backend communication.
+- **Responsive Design**: Works seamlessly on desktop and mobile devices.
 
-### Authentication
+## 🛠️ Tech Stack
 
-- Register
-- Login
-- JWT Authentication
+- **Frontend**: React, JavaScript, CSS
+- **Backend**: Node.js, Express.js (Assumed)
+- **Database**: MongoDB (Assumed)
+- **Authentication**: JWT
 
-### Task Management
+## 📦 Installation & Setup
 
-- Create Task
-- Edit Task
-- Delete Task
-- Mark Completed
-- View All Tasks
-
-### Profile
-
-- Update Profile
-- Upload Profile Image
-
-### UI
-
-- Responsive Design
-- Clean Interface
-- Loading Indicators
-- Toast Notifications
-
----
-
-## Tech Stack
-
-- React
-- JavaScript
-- Vite
-- Axios
-- REST API
-- CSS
-
----
-
-## Installation
-
-```bash
-git clone https://github.com/zaidshaikh5301/task-manager.git
-
-cd task-manager
-
-npm install
-
-npm run dev
-```
-
----
-
-## Folder Structure
-
-src/
-├── api/
-├── components/
-├── pages/
-├── context/
-├── assets/
-└── App.jsx
-
----
-
-## API Used
-
-https://intern-crud-task-api.onrender.com
-
----
-
-## Future Improvements
-
-- Task Categories
-- Dark Mode
-- Calendar View
-- Notifications
-- Drag & Drop Tasks
-
----
-
-## Author
-
-Zaid Shaikh
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/zaidshaikh5301/task-manager.git
+    cd task-manager
